@@ -8,7 +8,7 @@ const containerStyle = {
 }
 
 const customIcon = {
-  url: '/icon-location.svg',
+  url: './icon-location.svg',
   // size: google.maps.Size(46, 56),
 }
 
@@ -52,7 +52,7 @@ const Map = ({ apiKey }) => {
       <h1>IP Address Tracker</h1>
       <div className="input-container">
         <div className="icon" onClick={handleClick}>
-          <img src="/icon-arrow.svg" alt="arrow" />
+          <img src="./icon-arrow.svg" alt="arrow" />
         </div>
         <input ref={refInput} type="text" placeholder='Search for any Ipaddress or domain' id='searchInput'/>
       </div>
