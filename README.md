@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Visit](https://your-solution-url.com)
-- Live Site URL: [Visit](https://your-live-site-url.com)
+- Solution URL: [Visit](https://www.frontendmentor.io/solutions/ip-address-tracker-build-with-nextjs-and-rest-apis-13eWGie9tb)
+- Live Site URL: [Visit](https://akibraza91.github.io/ip-address-tracker/)
 
 ## My process
 
