@@ -1,0 +1,216 @@
+:root
+{
+    --verydarkgray: hsl(0, 0%, 17%);
+    --darkgray: hsl(0, 0%, 59%);
+    --fontsize: 18px;
+}
+.top-container
+{
+  position: absolute;
+  top: -16em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+#SearchBox
+{
+    position: relative;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    padding: 2em 2em 0 2em;
+}
+#SearchBox h1
+{
+    display: inline;
+    color: white;
+    font-weight: 500;
+}
+#SearchBox .input-container
+{
+    position: relative;
+    width: 50%;
+    border-radius: 0.8em;
+    overflow: hidden;
+}
+.input-container input
+{
+    width: 90%;
+    padding: 0.8em 1em;
+    outline: none;
+    font-size: var(--fontsize);
+}
+.input-container input:hover
+{
+    cursor: pointer;
+}
+.input-container .icon
+{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 17%);
+}
+.input-container .icon:hover
+{
+    opacity: 0.8;
+    cursor: pointer;
+}
+#SearchBox .details
+{
+    position: relative;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    gap: 1.5em;
+    padding: 1.5em 2em;
+    margin-top: 2em;
+    border-radius: 1em;
+}
+#SearchBox .details p
+{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--darkgray);
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+#SearchBox .details span
+{
+    font-size: 1.2em;
+    color: var(--verydarkgray);
+    font-weight: 500;
+}
+.details .ipaddress, .location, .timezone, .isp
+{
+    width: 24.99%;
+    border-right: 1px solid #ccc;
+    padding: 0.5em 0 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.details > div:last-child
+{
+    border: none;
+}
+@media (min-width: 320px) and (max-width: 425px){
+    .top-container
+    {
+        position: relative;
+        margin-top: -28em;
+    }
+}
+@media (max-width: 600px){
+    .top-container
+    {
+    top: -25em;
+    }
+    #SearchBox
+    {
+        width: 100%;
+        gap: 1em;
+    }
+    #SearchBox h1
+    {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+    #SearchBox .input-container
+    {
+        position: relative;
+        width: 80%;
+    }
+    #SearchBox .input-container .icon
+    {
+        width: 15%;
+    }
+    #SearchBox .input-container input
+    {
+        width: 85%;
+    }
+    #SearchBox .details
+    {
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 0.5em;
+        padding: 0;
+        gap: 0;
+        padding-top: 0.5em;
+    }
+    .details .ipaddress, .location, .timezone, .isp
+    {
+        position: relative;
+        width: 100%;
+        border: none;
+        align-items: center;
+        gap: 0.2em;
+        margin-bottom: -0.5em;
+    }
+}
+@media (min-width: 601px) and (max-width: 991px)
+{
+    .top-container
+    {
+    top: -8em;
+    }
+    #SearchBox
+    {
+        position: relative;
+        width: 100%;
+    }
+    #SearchBox .input-container
+    {
+        width: 60%;
+    }
+    #SearchBox .details
+    {
+        position: relative;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: -0.2em;
+        text-align: center;
+    }
+    .details .ipaddress, .location, .timezone, .isp
+    {
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+    #SearchBox .details > div:nth-child(2)
+    {
+        border: none;
+    }
+}
+@media (min-width: 991px) and (max-width: 1150px)
+{
+    .top-container
+    {
+    top: -12em;
+    }
+    #SearchBox
+    {
+        position: relative;
+        width: 100%;
+    }
+    #SearchBox .input-container
+    {
+        width: 50%;
+    }
+    #SearchBox .details
+    {
+        position: relative;
+        width: 90%;
+    }
+}
